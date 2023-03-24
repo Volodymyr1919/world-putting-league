@@ -34,7 +34,7 @@ export default function Home() {
     ]
 
     return(
-        <main>
+        <main className="home">
             <section className="main__heroAria">
                 <span className="heroAria__bg">
                     <div className="heroAria__wrapper">

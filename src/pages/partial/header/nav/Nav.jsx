@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 export default function Nav() {
     let links = [
         {route: "/", title: "HOME"},
-        {route: "/press-release", title: "PRESS RELEASE"},
+        {route: "http://theworldputtingleague.com/PLN_Press%20Release_WorldPuttingLeague_22823.pdf", title: "PRESS RELEASE"},
         {route: "/top-8", title: "TOP 8 FINALISTS"},
-        {route: "/day-1", title: "DAY 1 RESULTS"},
-        {route: "/day-2", title: "DAY 2 RESULTS"}
+        {route: "http://theworldputtingleague.com/results22723.html", title: "DAY 1 RESULTS"},
+        {route: "http://theworldputtingleague.com/results22823.html", title: "DAY 2 RESULTS"}
     ]
     return(
         <nav>

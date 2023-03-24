@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "./nav/Nav";
 import Button from "./button/Button";
 import logo from "../../../assets/img/logo.png";
@@ -8,8 +8,16 @@ import headerStyle from "./header.scss";
 
 export default function Header() {
     
+    const [header, setHeader] = useState();
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setHeader(window.pageYOffset > 200)
+        })
+    },[])
+
     return(
-        <header>
+        <header className={header ? "chBg" : "header"}>
             <figure>
                 <NavLink to="/">
                     <img src={logo} alt="logo" />
